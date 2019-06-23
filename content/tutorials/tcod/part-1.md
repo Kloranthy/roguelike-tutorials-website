@@ -228,6 +228,8 @@ new coordinates.
 -       libtcod.console_put_char(0, 1, 1, '@', libtcod.BKGND_NONE)
 +       libtcod.console_put_char(0, player_x, player_y, '@', libtcod.BKGND_NONE)
         libtcod.console_flush()
+        
++       libtcod.console_put_char(0, player_x, player_y, ' ', libtcod.BKGND_NONE)
         ...
 {{</ highlight >}}
 {{</ diff-tab >}}
@@ -237,6 +239,8 @@ new coordinates.
         <span class="crossed-out-text">libtcod.console_put_char(0, 1, 1, '@', libtcod.BKGND_NONE)</span>
         <span class="new-text">libtcod.console_put_char(0, player_x, player_y, '@', libtcod.BKGND_NONE)</span>
         libtcod.console_flush()
+        
+        <span class="new-text">libtcod.console_put_char(0, player_x, player_y, ' ', libtcod.BKGND_NONE)</span>
         ...</pre>
 {{</ original-tab >}}
 {{</ codetab >}}
